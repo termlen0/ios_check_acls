@@ -85,7 +85,7 @@ def check_network(network_to_check=None, network_from_device=None):
             network_to_check['mask']).netmask_bits())
         input_nw = netaddr.IPNetwork(network_to_check['network'] + '/' +
                                      input_mask)
-        return input_nw in device_network
+        return input_nw
 
 
 def check_port(input_dict=None, device_dict=None):
